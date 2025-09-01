@@ -15,6 +15,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 /* Estilo geral do corpo da página */
@@ -22,15 +23,16 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: var(--cor-fundo-0);
     text-align: center;
+    min-height: 100vh; 
 }
 
 /* Estilo do cabeçalho com o nome do restaurante */
 header {
-    font-family: 'Protest Revolution', sans-serif;
-    color: var(--cor-escura);
     background-color: var(--cor-fundo-1);
+    color: var(--cor-escura);
     padding: 20px 0;
     border-bottom: 5px solid var(--cor-escura);
+    font-family: 'Protest Revolution', sans-serif;
     font-size: 4em;
 }
 
@@ -67,7 +69,8 @@ section h1 {
     background-color: var(--cor-branco);
     border: 1px solid var(--cor-borda);
     border-radius: 10px;
-    width: 400px; /* Tamanho dos cards */
+    max-width: 400px; /* Tamanho máximo dos cards */
+    width: 100%; /* Faz o card ocupar o espaço disponível */
     overflow: hidden;
     box-shadow: 0 4px 8px var(--sombra-leve);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -111,8 +114,8 @@ section h1 {
     font-size: 1em;
     line-height: 1.5;
     color: var(--cor-texto-secundario);
-    height: 80px;
-    overflow: hidden;
+    flex-grow: 1;
+    margin-bottom: 15px;
 }
 
 .preco {
