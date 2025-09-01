@@ -22,6 +22,8 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: var(--cor-fundo-0);
     text-align: center;
+    height: 100vh; /* Altura total da viewport */
+    box-sizing: border-box; /* Inclui padding e border na largura total para que o tamanho do elemento seja calculado corretamente */
 }
 
 /* Estilo do cabeçalho com o nome do restaurante */
@@ -90,7 +92,7 @@ section h1 {
 }
 
 .prato-cabecalho {
-    display: flex;
+    display: flex; /* Usando Flexbox para alinhar o título e o preço */
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 15px;
@@ -99,7 +101,6 @@ section h1 {
 .prato h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5em;
-    margin: 0;
     color: var(--cor-escura);
     transition: color 0.3s;
 }
