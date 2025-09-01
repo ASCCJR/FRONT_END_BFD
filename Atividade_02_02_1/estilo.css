@@ -12,11 +12,15 @@
     --sombra-escura: rgba(0, 0, 0, 0.2);
 }
 
+/* Reset de Estilos */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilo geral do corpo da página */
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: var(--cor-fundo);
     text-align: center;
 }

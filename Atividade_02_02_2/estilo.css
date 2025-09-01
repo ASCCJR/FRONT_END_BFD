@@ -11,11 +11,15 @@
     --cor-hover: #8B0000;
 }
 
+/* Reset de Estilos */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilo geral do corpo da página */
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: var(--cor-fundo-0);
     text-align: center;
 }
