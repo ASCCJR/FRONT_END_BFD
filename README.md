@@ -7,4 +7,4 @@ Atividades - Treinamento Front-End - Parceria Softex Pernambuco e IFMA
 
 [Atividade 02_02.2 - Página de Cardápio de Restaurante (Studio Ghibli Themed Restaurant) (HTML e CSS)](https://github.com/ASCCJR/FRONT_END_BFD/tree/main/Atividade_02_02_2)
 
-[Atividade 02_01 - Página de Perfil/Currículo (Personagem Shadow the Hedgehog)] (https://github.com/ASCCJR/FRONT_END_BFD/tree/main/Atividade_02_01)
+[Atividade 02_01 - Página de Perfil/Currículo (Personagem Shadow the Hedgehog)](https://github.com/ASCCJR/FRONT_END_BFD/tree/main/Atividade_02_01)
