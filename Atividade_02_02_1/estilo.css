@@ -1,9 +1,11 @@
-/* Variáveis de Cor */
+
+/* ==========================
+   Variáveis Globais de Cor
+   ========================== */
 :root {
     --cor-fundo: #fdfaf6;
     --cor-texto-principal: #333;
     --cor-texto-secundario: #666;
-    --cor-preto: #000000;
     --cor-branco: #fff;
     --cor-destaque: #FFD700;
     --cor-destaque-escuro: #8B0000;
@@ -12,22 +14,25 @@
     --sombra-escura: rgba(0, 0, 0, 0.2);
 }
 
-/* Reset de Estilos */
+/* ==========================
+   Reset de Estilos
+   ========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral do corpo da página */
+/* ==========================
+   Estrutura Principal
+   ========================== */
 body {
     font-family: 'Lato', sans-serif;
     background-color: var(--cor-fundo);
     text-align: center;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
-/* Estilo do cabeçalho com o nome do restaurante */
 header {
     background-color: var(--cor-destaque-escuro);
     color: var(--cor-branco);
@@ -37,12 +42,13 @@ header {
     font-size: 3em;
 }
 
-/* Estilo do conteúdo principal */
 main {
     padding: 20px;
 }
 
-/* Estilo das seções (Entradas, Pratos Principais, Sobremesas) */
+/* ==========================
+   Seções do Cardápio
+   ========================== */
 section {
     margin-bottom: 40px;
 }
@@ -57,21 +63,21 @@ section h1 {
     padding-bottom: 10px;
 }
 
-/* Container para os pratos, usando Flexbox para alinhar */
+/* ==========================
+   Cards de Pratos
+   ========================== */
 .container-pratos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Espaçamento entre os pratos */
+    gap: 30px;
 }
 
-/* Estilo de cada prato individual */
 .prato {
     background-color: var(--cor-branco);
     border: 1px solid var(--cor-borda);
     border-radius: 10px;
-    max-width: 400px; /* Tamanho máximo dos cards */
-    width: 100%; /* Faz o card ocupar o espaço disponível */
+    max-width: 400px;
     overflow: hidden;
     box-shadow: 0 4px 8px var(--sombra-leve);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -94,7 +100,7 @@ section h1 {
 }
 
 .prato-cabecalho {
-    display: flex; /* Usando Flexbox para alinhar o título e o preço */
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 15px;
@@ -115,7 +121,6 @@ section h1 {
     font-size: 1em;
     line-height: 1.5;
     color: var(--cor-texto-secundario);
-    flex-grow: 1;
     margin-bottom: 15px;
 }
 
@@ -127,7 +132,9 @@ section h1 {
     margin-left: 10px;
 }
 
-/* --- Rodapé --- */
+/* ==========================
+   Rodapé
+   ========================== */
 .site-footer {
     background-color: var(--cor-destaque-escuro);
     color: var(--cor-branco);
@@ -141,7 +148,7 @@ section h1 {
 }
 
 .footer-nome-restaurante {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -153,48 +160,41 @@ section h1 {
 }
 
 .footer-horario {
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
+/*
+   Responsividade básica: ajuste de tamanho dos cards e textos em telas menores
+   (Sugestão da i.a, deixei comentado para posterior aplicação)
 
-/*Sugestão I.A, mas não implementado*/
-
-/* Media Query para telas menores
 @media (max-width: 768px) {
     header {
-        font-size: 2em;
+        font-size: 2rem;
     }
-
     section h1 {
-        font-size: 2em;
+        font-size: 2rem;
     }
-
     .container-pratos {
         gap: 20px;
     }
-
     .prato {
-        max-width: 350px; /* Ajusta o tamanho máximo em telas menores 
+        max-width: 20rem;
     }
 }
 
-*/
-
-/*@media (max-width: 480px) {
+@media (max-width: 480px) {
     .prato {
-        max-width: 100%;  Ocupa toda a largura em telas muito pequenas 
+        max-width: 100%;
     }
-
     .prato-texto {
         padding: 15px;
     }
-
     .prato h2 {
-        font-size: 1.3em;
+        font-size: 1.1rem;
     }
-
     .preco {
-        font-size: 1.1em;
+        font-size: 1rem;
     }
+}
 }
 */
