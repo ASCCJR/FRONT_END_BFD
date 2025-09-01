@@ -1,0 +1,150 @@
+/* Variáveis de Cor */
+:root {
+    --cor-fundo-0: #fdfaf6;
+    --cor-fundo-1: #ECCEAC;
+    --cor-escura: #333;
+    --cor-texto-secundario: #666;
+    --cor-branco: #fff;
+    --cor-borda: #ddd;
+    --sombra-leve: rgba(0, 0, 0, 0.1);
+    --sombra-escura: rgba(0, 0, 0, 0.2);
+    --cor-hover: #8B0000;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo-0);
+    text-align: center;
+}
+
+/* Estilo do cabeçalho com o nome do restaurante */
+header {
+    background-color: var(--cor-fundo-1);
+    color: var(--cor-escura);
+    padding: 20px 0;
+    border-bottom: 5px solid var(--cor-escura);
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 4em;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo das seções (Entradas, Pratos Principais, Sobremesas) */
+section {
+    margin-bottom: 40px;
+}
+
+section h1 {
+    font-family: 'Protest Revolution', serif;
+    font-size: 2.5em;
+    color: var(--cor-escura);
+    display: inline-block;
+    margin-bottom: 30px;
+    border-bottom: 4px solid var(--cor-escura);
+    padding-bottom: 10px;
+}
+
+/* Container para os pratos, usando Flexbox para alinhar */
+.container-pratos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os pratos */
+}
+
+/* Estilo de cada prato individual */
+.prato {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    width: 400px; /* Tamanho dos cards */
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--sombra-leve);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.prato:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px var(--sombra-escura);
+}
+
+.prato img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.prato-texto {
+    padding: 20px;
+}
+
+.prato-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.prato h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin: 0;
+    color: var(--cor-escura);
+    transition: color 0.3s;
+}
+
+.prato:hover h2 {
+    color: var(--cor-hover);
+}
+
+.prato p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--cor-texto-secundario);
+    height: 80px;
+    overflow: hidden;
+}
+
+.preco {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor-escura);
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+/* --- Rodapé --- */
+.site-footer {
+    background-color: var(--cor-fundo-1);
+    color: var(--cor-escura);
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 5px solid var(--cor-escura);
+}
+
+.site-footer p {
+    margin: 8px 0;
+}
+
+.footer-nome-restaurante {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.footer-telefone {
+    display: inline-block;
+    border-bottom: 2px solid var(--cor-escura);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.footer-horario {
+    font-size: 0.9em;
+}
