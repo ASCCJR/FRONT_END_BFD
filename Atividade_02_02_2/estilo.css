@@ -26,11 +26,11 @@ body {
 
 /* Estilo do cabeçalho com o nome do restaurante */
 header {
-    background-color: var(--cor-fundo-1);
+    font-family: 'Protest Revolution', sans-serif;
     color: var(--cor-escura);
+    background-color: var(--cor-fundo-1);
     padding: 20px 0;
     border-bottom: 5px solid var(--cor-escura);
-    font-family: 'Protest Revolution', sans-serif;
     font-size: 4em;
 }
 
