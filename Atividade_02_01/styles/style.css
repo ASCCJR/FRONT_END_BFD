@@ -22,6 +22,10 @@ body{
     color: var(--cor-secundaria);
 }
 
+abbr {
+  text-decoration: none;
+}
+
 .cabecalho{
     padding: 2% 0% 0% 15%;
 }
