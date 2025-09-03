@@ -13,6 +13,27 @@
     --sombra-leve: rgba(0, 0, 0, 0.1);
     --sombra-escura: rgba(0, 0, 0, 0.2);
 }
+/* ==========================
+   Acessibilidade e UX
+   ========================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================
+   Links e Botões Acessíveis
+   ========================== */
+a, button {
+    transition: outline 0.2s, box-shadow 0.2s;
+}
+a:focus, button:focus {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px var(--sombra-leve);
+}
+a:hover, button:hover {
+    filter: brightness(0.95);
+}
 
 /* ==========================
    Reset de Estilos
@@ -39,7 +60,7 @@ header {
     padding: 20px 0;
     border-bottom: 5px solid var(--cor-destaque);
     font-family: 'Playfair Display', serif;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 main {
@@ -53,7 +74,7 @@ section {
     margin-bottom: 40px;
 }
 
-section h1 {
+section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
     color: var(--cor-preto);
@@ -163,15 +184,11 @@ section h1 {
     font-size: 0.9rem;
 }
 
-/*
-   Responsividade básica: ajuste de tamanho dos cards e textos em telas menores
-   (Sugestão da i.a, deixei comentado para posterior aplicação)
-
 @media (max-width: 768px) {
     header {
         font-size: 2rem;
     }
-    section h1 {
+    section h2 {
         font-size: 2rem;
     }
     .container-pratos {
@@ -196,5 +213,3 @@ section h1 {
         font-size: 1rem;
     }
 }
-}
-*/
