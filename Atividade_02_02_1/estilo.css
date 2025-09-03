@@ -13,27 +13,6 @@
     --sombra-leve: rgba(0, 0, 0, 0.1);
     --sombra-escura: rgba(0, 0, 0, 0.2);
 }
-/* ==========================
-   Acessibilidade e UX
-   ========================== */
-html {
-    scroll-behavior: smooth;
-}
-
-/* ==========================
-   Links e Botões Acessíveis
-   ========================== */
-a, button {
-    transition: outline 0.2s, box-shadow 0.2s;
-}
-a:focus, button:focus {
-    outline: 2px solid var(--cor-destaque);
-    outline-offset: 2px;
-    box-shadow: 0 0 0 3px var(--sombra-leve);
-}
-a:hover, button:hover {
-    filter: brightness(0.95);
-}
 
 /* ==========================
    Reset de Estilos
@@ -42,6 +21,13 @@ a:hover, button:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* ==========================
+   Acessibilidade e UX
+   ========================== */
+html {
+    scroll-behavior: smooth;
 }
 
 /* ==========================

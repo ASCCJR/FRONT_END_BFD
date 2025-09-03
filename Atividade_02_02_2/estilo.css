@@ -23,15 +23,21 @@
 }
 
 /* ==========================
+   Acessibilidade e UX
+   ========================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================
    Estrutura Principal
    ========================== */
 body {
     font-family: 'Lato', sans-serif;
     background-color: var(--cor-fundo-0);
     text-align: center;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
-
 
 header {
     background-color: var(--cor-fundo-1);
@@ -39,9 +45,9 @@ header {
     padding: 20px 0;
     border-bottom: 5px solid var(--cor-escura);
     font-family: 'Protest Revolution', sans-serif;
-    font-size: 4em;
+    font-size: 1.9em;
+    letter-spacing: 2px;
 }
-
 
 main {
     padding: 20px;
@@ -54,7 +60,7 @@ section {
     margin-bottom: 40px;
 }
 
-section h1 {
+section h2 {
     font-family: 'Protest Revolution', serif;
     font-size: 2.5em;
     color: var(--cor-escura);
@@ -164,4 +170,34 @@ section h1 {
 
 .footer-horario {
     font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+    section h2 {
+        font-size: 2rem;
+    }
+    .container-pratos {
+        gap: 20px;
+    }
+    .prato {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .prato {
+        max-width: 100%;
+    }
+    .prato-texto {
+        padding: 15px;
+    }
+    .prato h2 {
+        font-size: 1.1rem;
+    }
+    .preco {
+        font-size: 1rem;
+    }
 }
