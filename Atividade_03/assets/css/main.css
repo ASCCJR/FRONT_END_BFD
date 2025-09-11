@@ -1,0 +1,19 @@
+/* Arquivo agregador com camadas (@layer) */
+@layer tokens, base, layout, tipografia, componentes, utilitarios;
+
+@import "tokens.css" layer(tokens);
+@import "base.css" layer(base);
+@import "layout.css" layer(layout);
+@import "tipografia.css" layer(tipografia);
+
+/* Componentes */
+@import "componentes/botoes.css" layer(componentes);
+@import "componentes/cabecalho.css" layer(componentes);
+@import "componentes/destaque.css" layer(componentes);
+@import "componentes/recursos.css" layer(componentes);
+@import "componentes/depoimentos.css" layer(componentes);
+@import "componentes/icones-sociais.css" layer(componentes);
+@import "componentes/rodape.css" layer(componentes);
+
+/* Utilidades */
+@import "utilitarios.css" layer(utilitarios);

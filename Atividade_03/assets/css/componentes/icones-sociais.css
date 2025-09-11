@@ -1,0 +1,29 @@
+/* Ícones sociais 
+.icones-sociais {
+    text-align: center;
+}
+
+.icones-sociais__icone {
+    background-color: var(--color-accent);
+    display: inline-block;
+    margin: 0 5px 5px;
+    width: 33%;
+    height: 72px;
+    position: relative;
+}
+
+@media (min-width:530px) {
+    .icones-sociais__icone {
+        width: 72px;
+        margin: 0 5px;
+    }
+}
+
+.icones-sociais__icone .icone {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/

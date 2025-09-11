@@ -1,0 +1,39 @@
+/* Recursos */
+.item-recurso {
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+@media (min-width:530px) {
+    .item-recurso {
+        padding-left: 94px;
+    }
+}
+
+.item-recurso__icone {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width:530px) {
+    .item-recurso__icone {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.item-recurso__titulo {
+    font-size: var(--fs-feature-title-mobile);
+    font-weight: var(--fw-light);
+    margin-top: .7em;
+    margin-bottom: .8rem;
+    text-align: center;
+}
+
+@media (min-width:530px) {
+    .item-recurso__titulo {
+        text-align: left;
+        font-size: var(--fs-feature-title);
+        margin-top: 1em;
+    }
+}

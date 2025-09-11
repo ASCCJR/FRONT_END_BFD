@@ -1,0 +1,24 @@
+/* Botões */
+.botao {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: var(--btn-pad-y) var(--btn-pad-x);
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+}
+
+.botao--laranja {
+    background-color: var(--color-accent);
+}
+
+.botao--grande {
+    padding: var(--btn-large-pad-y) var(--btn-large-pad-x);
+}
+
+@media (min-width:530px) {
+    .botao--grande {
+        font-size: var(--fs-btn-large);
+    }
+}

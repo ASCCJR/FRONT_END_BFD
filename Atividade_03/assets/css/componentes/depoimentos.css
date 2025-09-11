@@ -1,0 +1,44 @@
+/* Depoimentos */
+.depoimento {
+    background-color: var(--color-overlay-light);
+    padding: 0 18px 1;
+    margin-bottom: 98px;
+}
+
+@media (min-width:1010px) {
+    .depoimento {
+        margin-bottom: 0;
+        padding: 0 1.8125rem 1px;
+    }
+}
+
+.depoimento--ultimo {
+    margin-bottom: 0;
+}
+
+.depoimento__foto {
+    border-radius: 80px;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -80px;
+    position: relative;
+    top: -80px;
+    border: 6px solid hsla(0, 0%, 100%, .7);
+}
+
+.depoimento__titulo {
+    color: var(--color-primary);
+    text-align: center;
+    font-size: var(--fs-testimonial-title);
+    font-weight: var(--fw-medium);
+    margin: 0;
+}
+
+.depoimento__subtitulo {
+    color: var(--color-accent);
+    text-align: center;
+    font-weight: var(--fw-regular);
+    font-size: .9375rem;
+    margin: .25rem 0 1rem;
+}

@@ -1,0 +1,21 @@
+/* Rodapé */
+.rodape-site {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: .5rem;
+    text-align: center;
+}
+
+.rodape-site__texto {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+@media (min-width:800px) {
+    .rodape-site__texto {
+        display: inline;
+        margin: 0;
+        margin-right: 1.4rem;
+    }
+}
