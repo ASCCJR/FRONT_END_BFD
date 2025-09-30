@@ -1,0 +1,67 @@
+<!-- 
+ 
+Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a 
+data por extenso. 
+
+Dica: use a função “split” de uma string que quebra a string 
+em pedaços dado um separador como argumento da função. Nesse caso, o 
+separador é a barra (/) da data. 
+
+Exemplo: Para a entrada “22/04/2025” deve 
+ser escrito “22 de abril de 2025”. 
+
+É importante fazer as devidas validações, 
+inclusive anos bissextos. 
+
+Dica: além das funções createElement() e textContent você pode 
+utilizar a função document.write(). 
+
+Exemplo: document.write("<tr align=center>\n"); 
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center mb-0">Conversor de Data para Extenso</h1>
+                    </div>
+                    <div class="card-body">
+                        <form id="formData">
+                            <div class="mb-3">
+                                <label for="dataInput" class="form-label">Digite uma data no formato dd/mm/aaaa:</label>
+                                <input type="text" class="form-control" id="dataInput" placeholder="Ex: 22/04/2025"
+                                    maxlength="10">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Converter Data</button>
+                        </form>
+                        <div id="resultado" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script customizado para conversão de datas -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

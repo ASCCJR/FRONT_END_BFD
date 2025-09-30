@@ -1,0 +1,28 @@
+# Arquivos Bootstrap para estudos - não incluir no repositório
+bootstrap.min_.css
+bootstrap.bundle.min_.js
+index_bootstrap.html
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências
+node_modules/
+bower_components/
+
+# Arquivos temporários
+*.tmp
+*.temp
