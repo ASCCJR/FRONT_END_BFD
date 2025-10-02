@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo - Tecnologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <section class="card shadow-sm">
+                    <div class="card-body p-4 p-md-5">
+                        <header class="mb-4 text-center">
+                            <h1 class="h3 fw-bold text-primary">🧠 Quiz de Tecnologia</h1>
+                            <p class="text-muted mb-0">Teste seus conhecimentos sobre programação e tecnologia!</p>
+                            <div class="mt-3">
+                                <span class="badge bg-info fs-6">3 Perguntas</span>
+                                <span class="badge bg-success fs-6">Múltipla Escolha</span>
+                            </div>
+                        </header>
+
+                        <!-- Instruções -->
+                        <div id="instructions" class="alert alert-info" role="alert">
+                            <i class="bi bi-info-circle-fill me-2"></i>
+                            <strong>Instruções:</strong> Leia cada pergunta com atenção e selecione a alternativa que considera correta. 
+                            Ao final, clique em "Finalizar Quiz" para ver seu resultado!
+                        </div>
+
+                        <!-- Formulário do Quiz -->
+                        <form id="quiz-form">
+                            <!-- As perguntas serão geradas dinamicamente pelo JavaScript -->
+                            <div id="questions-container"></div>
+
+                            <!-- Botões de Ação -->
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <button type="button" id="reset-btn" class="btn btn-outline-secondary">
+                                    <i class="bi bi-arrow-clockwise me-1"></i> Reiniciar
+                                </button>
+                                <button type="submit" class="btn btn-primary btn-lg px-4">
+                                    <i class="bi bi-check-circle me-1"></i> Finalizar Quiz
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Feedback de Validação -->
+                        <div id="feedback" class="mt-4" role="alert" hidden></div>
+
+                        <!-- Resultado do Quiz -->
+                        <section id="quiz-results" class="mt-4" hidden>
+                            <div class="card border-0">
+                                <div class="card-body p-4">
+                                    <!-- Pontuação -->
+                                    <div class="text-center mb-4">
+                                        <div id="score-display" class="display-4 fw-bold mb-2">0/3</div>
+                                        <div id="score-message" class="h5 mb-3"></div>
+                                        <div id="score-percentage" class="badge fs-6 px-3 py-2"></div>
+                                    </div>
+
+                                    <!-- Detalhes das Respostas -->
+                                    <div id="answers-review">
+                                        <h3 class="h5 fw-bold mb-3">📋 Revisão das Respostas</h3>
+                                        <div id="detailed-results"></div>
+                                    </div>
+
+                                    <!-- Botão para Tentar Novamente -->
+                                    <div class="text-center mt-4">
+                                        <button type="button" id="try-again-btn" class="btn btn-primary btn-lg">
+                                            <i class="bi bi-arrow-repeat me-1"></i> Fazer Quiz Novamente
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
