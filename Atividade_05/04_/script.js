@@ -1,13 +1,3 @@
-/*
- * QUIZ INTERATIVO COM CORREÇÃO AUTOMÁTICA
- * 
- * Funcionalidades:
- * - Quiz com 3 perguntas de múltipla escolha sobre tecnologia
- * - Correção automática com feedback detalhado
- * - Pontuação final e mensagem personalizada
- * - Manipulação dinâmica do DOM usando arrays
- */
-
 // Array com as perguntas do quiz
 const quizData = [
     {
